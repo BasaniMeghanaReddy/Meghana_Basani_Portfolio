@@ -2,21 +2,91 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <section id="projects">
-      <div className="rounded-xl shadow p-6 bg-white">
-        <h2 className="text-2xl font-semibold mb-2">Projects</h2>
-        <ul className="space-y-4">
-          <li>
-            <strong>E-Laundry Services</strong> – Android app connecting users with laundry services. Real-time tracking, notifications, and reviews.
-          </li>
-          <li>
-            <strong>Water Quality Monitoring (ML)</strong> – ML pipeline using RF, SVM, XGBoost for estimating water parameters from satellite data.
-          </li>
-          <li>
-            <strong>Smart Ambulance System</strong> – App for auto-detecting accidents and sending emergency alerts via Firebase & Maps API.
-          </li>
-        </ul>
+    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+      <h2 className="text-2xl font-bold text-blue-900 mb-8">
+        Projects
+      </h2>
+      <div className="space-y-6">
+        <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
+          <div className="flex items-start space-x-6">
+            <img 
+              src="/E-Laundry_logo.png" 
+              alt="E-Laundry Services Logo" 
+              className="w-20 h-20 flex-shrink-0"
+            />
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">E-Laundry Services</h3>
+              <div className="mb-3">
+                <p className="text-blue-900 font-medium text-sm">Bhoj Reddy Engineering College for Women (BRECW), Hyderabad</p>
+                <p className="text-gray-600 text-xs">Oct 2022 - Apr 2023</p>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4 text-justify">
+                Mobile application designed for laundry purposes, providing help to people living away from home and unemployed washer-men. 
+                Delivers best-in-class laundry room operations with superior quality and service.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Android</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Mobile App</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Service Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
+          <div className="flex items-start space-x-6">
+            <img 
+              src="/smartambulancesystem_logo.png" 
+              alt="Smart Ambulance System Logo" 
+              className="w-20 h-20 flex-shrink-0"
+            />
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Smart Ambulance System</h3>
+              <div className="mb-3">
+                <p className="text-blue-900 font-medium text-sm">Bhoj Reddy Engineering College for Women (BRECW), Hyderabad</p>
+                <p className="text-gray-600 text-xs">Jan 2023 - Jun 2023</p>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4 text-justify">
+                Android app that uses mobile accelerometer to detect collisions while driving and automatically sends GPS location 
+                with nearby ambulance/hospital numbers to emergency contacts.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Emergency</span>
+                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Accelerometer</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">GPS Tracking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
+          <div className="flex items-start space-x-6">
+            <img 
+              src="/portfoliologo.png" 
+              alt="Portfolio Management System Logo" 
+              className="w-20 h-20 flex-shrink-0"
+            />
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Portfolio Management System</h3>
+              <div className="mb-3">
+                <p className="text-blue-900 font-medium text-sm">Personal Project</p>
+                <p className="text-gray-600 text-xs">Dec 2024 - Present</p>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4 text-justify">
+                A comprehensive portfolio management system built with Next.js and React, featuring responsive design, 
+                dynamic content management, and modern UI/UX principles. Includes project showcase, skills visualization, 
+                and contact management.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Next.js</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">React</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Tailwind CSS</span>
+                <span className="px-1 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Framer Motion</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }

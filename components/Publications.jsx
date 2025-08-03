@@ -1,0 +1,73 @@
+import React from "react";
+
+export default function Publications() {
+  const publications = [
+    {
+      title: "Monitoring Water Quality Using Machine Learning Algorithms",
+      journal: "The International Journal of Analytical and Experimental Modal Analysis (IJAEMA)",
+      date: "June 1, 2023",
+      description: "Conducted a systematic review on machine learning (ML) applications for estimating water quality parameters using satellite data.",
+      highlights: [
+        "Analyzed 1,796 research papers, refining the selection to 113 studies to assess the effectiveness of ML in water quality monitoring",
+        "Evaluated various ML models, including ANN, SVM, RF, DT, and GP, for retrieving water quality parameters like chlorophyll-a, salinity, and turbidity",
+        "Utilized satellite data sources, such as Landsat, Sentinel, MODIS, and VIIRS, for remote sensing applications in water quality assessment",
+        "Applied PRISMA methodology for systematic literature review and data extraction, ensuring high-quality research synthesis",
+        "Demonstrated the potential of ML in environmental monitoring, aiding policymakers and water resource managers in sustainable water quality management"
+      ]
+    },
+    {
+      title: "E – Laundry Services",
+      journal: "The International Journal of Analytical and Experimental Modal Analysis (IJAEMA)",
+      date: "April 1, 2023",
+      description: "Developed an Android-based e-laundry application to enhance accessibility and efficiency in laundry services.",
+      highlights: [
+        "Implemented user and admin functionalities, enabling service providers to manage operations and users to track their laundry progress",
+        "Integrated key features like laundry shop management, order tracking, request status updates, and notifications",
+        "Designed the system architecture, incorporating technical and software architecture principles to optimize performance",
+        "Published findings in the International Journal of Analytical and Experimental Modal Analysis (April 2023, Vol. XV, Issue IV)",
+        "Addressed challenges in existing manual laundry management systems by automating requests, reducing paperwork, and improving customer experience"
+      ]
+    }
+  ];
+
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+      <h2 className="text-2xl font-bold text-blue-900 mb-8">
+        Publications & Research
+      </h2>
+      <div className="space-y-6">
+        {publications.map((publication, index) => (
+          <div key={index} className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                {publication.title}
+              </h3>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                <p className="text-blue-900 font-medium text-sm">
+                  {publication.journal}
+                </p>
+                <span className="text-sm text-gray-600 sm:ml-4">
+                  {publication.date}
+                </span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4 text-justify">
+                {publication.description}
+              </p>
+            </div>
+            
+            <div className="space-y-2">
+              <h4 className="text-sm font-semibold text-gray-800 mb-3">Key Contributions:</h4>
+              <div className="space-y-2">
+                {publication.highlights.map((highlight, highlightIndex) => (
+                  <div key={highlightIndex} className="text-gray-700 text-sm leading-relaxed text-justify">
+                    {highlight}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+} 

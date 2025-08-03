@@ -2,80 +2,270 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
-
+import ProfileCard from "./ProfileCard";
+import Publications from "./Publications";
+import Certifications from "./Certifications";
+import Leadership from "./Leadership";
+import Navigation from "./Navigation";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-50 to-white text-gray-900 font-sans">
-      {/* Navbar */}
-      <header className="sticky top-0 bg-white shadow z-10">
-        <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Meghana Basani</h1>
-          <nav className="space-x-4">
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#experience" className="hover:underline">Experience</a>
-            <a href="#projects" className="hover:underline">Projects</a>
-            <a href="#skills" className="hover:underline">Skills</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </nav>
-        </div>
-      </header>
+    <div className="min-h-screen bg-gray-50">
+      {/* Navigation */}
+      <Navigation />
 
-      <main className="max-w-5xl mx-auto px-6 space-y-10 py-10">
-        {/* Hero Section */}
-        <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} className="text-center">
-          <h2 className="text-4xl font-extrabold">Hi, I'm Meghana 👋</h2>
-          <p className="text-xl mt-4">MS in Computer Science | Software Developer Intern @NDSU AGDA</p>
-          <p className="mt-2">📧 meghana.basani@ndsu.edu | 📞 701-639-3559</p>
-
-          {/* Social Links */}
-          <div className="flex justify-center mt-4 space-x-6">
-            <a href="https://github.com/BasaniMeghanaReddy" target="_blank" rel="noopener noreferrer">
-              <Github className="w-6 h-6 hover:text-blue-600" />
-            </a>
-            <a href="https://www.linkedin.com/in/basani-meghana/" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-6 h-6 hover:text-blue-600" />
-            </a>
-          </div>
+      {/* Profile Section */}
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center"
+        >
+          <ProfileCard />
         </motion.div>
+      </div>
 
-        {/* About Me */}
-        <section id="about">
-          <div className="rounded-xl shadow p-6 bg-white">
-            <h2 className="text-2xl font-semibold mb-2">About Me</h2>
-            <p>
-              I’m a Computer Science graduate student at NDSU with experience in full-stack development,
-              cloud infrastructure, and ML. Passionate about building scalable systems and solving
-              real-world problems through software.
-            </p>
-          </div>
-        </section>
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Section 1: Education */}
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            id="education"
+            className="lg:col-span-3 bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+          >
+            <h2 className="text-2xl font-bold text-blue-900 mb-6">
+              Education
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="flex items-start space-x-4">
+                  <img 
+                    src="/North_Dakota_State_Bison_logo.svg" 
+                    alt="NDSU Logo" 
+                    className="w-16 h-16 flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-gray-900">North Dakota State University | Fargo, USA</h3>
+                    <p className="text-gray-700 text-sm">Master's in Computer Science | Aug '24 - May '26</p>
+                    <p className="text-blue-900 text-sm font-medium">GPA: 3.75/4.00</p>
+                    <div className="mt-2">
+                      <p className="text-gray-600 text-xs font-medium mb-1">Relevant Courses:</p>
+                      <p className="text-gray-600 text-xs text-justify">Machine Learning, Software Engineering, Database Systems, Web Development, Data Structures & Algorithms</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="flex items-start space-x-4">
+                  <img 
+                    src="/JNTU_Hyderabad_logo.png" 
+                    alt="JNTU Hyderabad Logo" 
+                    className="w-16 h-16 flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-gray-900">Jawaharlal Nehru Technological University | Hyderabad, INDIA</h3>
+                    <p className="text-gray-700 text-sm">Bachelor's of Technology in Computer Science | Aug '19 - May '23</p>
+                    <p className="text-blue-900 text-sm font-medium">GPA: 8.0/10.00</p>
+                    <div className="mt-2">
+                      <p className="text-gray-600 text-xs font-medium mb-1">Relevant Courses:</p>
+                      <p className="text-gray-600 text-xs text-justify">Data Structures, Object-Oriented Programming, Computer Networks, Operating Systems, Software Engineering</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="flex items-start space-x-4">
+                  <img 
+                    src="/narayana_junior_college_logo.jpeg" 
+                    alt="Narayana Junior College Logo" 
+                    className="w-16 h-16 flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-gray-900">Narayana Junior College | Hyderabad, INDIA</h3>
+                    <p className="text-gray-700 text-sm">Intermediate (12th Grade) | Jun '17 - Apr '19</p>
+                    <p className="text-blue-900 text-sm font-medium">Grade: 932/1000</p>
+                    <div className="mt-2">
+                      <p className="text-gray-600 text-xs font-medium mb-1">Stream:</p>
+                      <p className="text-gray-600 text-xs text-justify">Science (Mathematics, Physics, Chemistry)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="flex items-start space-x-4">
+                  <img 
+                    src="/priyankahighschoollogo.png" 
+                    alt="Priyanka High School Logo" 
+                    className="w-16 h-16 flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-gray-900">Priyanka High School | Hyderabad, INDIA</h3>
+                    <p className="text-gray-700 text-sm">SSC (10th Grade) | 2017</p>
+                    <p className="text-blue-900 text-sm font-medium">Grade: 9.5/10</p>
+                    <div className="mt-2">
+                      <p className="text-gray-600 text-xs font-medium mb-1">Education Level:</p>
+                      <p className="text-gray-600 text-xs text-justify">Secondary School Certificate (SSC)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.section>
 
-        {/* Experience, Projects, Skills as separate components */}
-        <Experience />
-        <Projects />
-        <Skills />
+          {/* Section 1: Skills */}
+          <motion.section
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            id="skills"
+          >
+            <Skills />
+          </motion.section>
+        </div>
 
-        {/* Contact */}
-        <section id="contact">
-          <div className="rounded-xl shadow p-6 bg-white">
-            <h2 className="text-2xl font-semibold mb-2">Leadership & Contact</h2>
-            <p>TA in Physics & Astronomy | ML Research Assistant | JNTU Tech Club Member</p>
-            <p className="mt-2">For collaborations or opportunities, reach out at <strong>meghana.basani@ndsu.edu</strong>.</p>
-            <button
-               className="mt-4 px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"
-               onClick={() => window.open('/Meghana_Basani_Resume.pdf', '_blank')}
-            >
-             Download Resume
-            </button>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-12">
+          {/* Section 2: Work Experience */}
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            id="experience"
+            className="lg:col-span-3"
+          >
+            <Experience />
+          </motion.section>
 
-          </div>
-        </section>
-      </main>
+          {/* Section 2: Certifications & Leadership */}
+          <motion.section
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="space-y-6"
+          >
+            <Certifications />
+            <Leadership />
+          </motion.section>
+        </div>
+
+        {/* Section 3: Projects */}
+        <div className="mt-12">
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            id="projects"
+          >
+            <Projects />
+          </motion.section>
+        </div>
+
+        {/* Section 4: Publications */}
+        <div className="mt-12">
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            id="publications"
+          >
+            <Publications />
+          </motion.section>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-12">
+          {/* Section 5: Updates */}
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+          >
+            <h2 className="text-2xl font-bold text-blue-900 mb-6">
+              Recent Updates
+            </h2>
+            <div className="space-y-4">
+              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
+                <p className="text-gray-900 text-sm font-medium">Software Developer Intern @NDSU AGDA</p>
+                <p className="text-gray-600 text-xs">January 2024</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
+                <p className="text-gray-900 text-sm font-medium">Started MS in Computer Science at NDSU</p>
+                <p className="text-gray-600 text-xs">August 2024</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
+                <p className="text-gray-900 text-sm font-medium">Graduated with B.Tech in Computer Science</p>
+                <p className="text-gray-600 text-xs">May 2023</p>
+              </div>
+            </div>
+          </motion.section>
+
+          {/* Section 5: Contact */}
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            id="get-in-touch"
+            className="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+          >
+            <h2 className="text-2xl font-bold text-blue-900 mb-6">
+              Get In Touch
+            </h2>
+            <div className="space-y-4">
+              <a 
+                href="mailto:meghana.basani@ndsu.edu"
+                className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                <span className="text-sm">meghana.basani@ndsu.edu</span>
+              </a>
+              <a 
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+                <span className="text-sm">LinkedIn</span>
+              </a>
+              <a 
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
+              >
+                <Github className="w-4 h-4" />
+                <span className="text-sm">GitHub</span>
+              </a>
+              <div className="mt-6 space-y-3">
+                <button
+                  className="w-full flex items-center justify-center space-x-2 bg-blue-900 text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
+                  onClick={() => window.open('/Meghana%20Basani%20Resume.pdf', '_blank')}
+                >
+                  <Download className="w-4 h-4" />
+                  <span>Download Resume</span>
+                </button>
+                <a
+                  href="/Meghana%20Basani%20Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center space-x-2 bg-gray-100 text-gray-700 px-4 py-3 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors border border-gray-300"
+                >
+                  <Download className="w-4 h-4" />
+                  <span>View Resume Online</span>
+                </a>
+
+              </div>
+            </div>
+          </motion.section>
+        </div>
+      </div>
     </div>
   );
 }

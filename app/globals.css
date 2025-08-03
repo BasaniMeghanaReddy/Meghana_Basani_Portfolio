@@ -45,24 +45,24 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.13 0.028 261.692);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.13 0.028 261.692);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.13 0.028 261.692);
-  --primary: oklch(0.21 0.034 264.665);
-  --primary-foreground: oklch(0.985 0.002 247.839);
-  --secondary: oklch(0.967 0.003 264.542);
-  --secondary-foreground: oklch(0.21 0.034 264.665);
-  --muted: oklch(0.967 0.003 264.542);
-  --muted-foreground: oklch(0.551 0.027 264.364);
-  --accent: oklch(0.967 0.003 264.542);
-  --accent-foreground: oklch(0.21 0.034 264.665);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.928 0.006 264.531);
-  --input: oklch(0.928 0.006 264.531);
-  --ring: oklch(0.707 0.022 261.325);
+  --background: #fff;
+  --foreground: #111827;
+  --card: #fff;
+  --card-foreground: #111827;
+  --popover: #f3f4f6;
+  --popover-foreground: #111827;
+  --primary: #1e3a8a;
+  --primary-foreground: #fff;
+  --secondary: #1e293b;
+  --secondary-foreground: #fff;
+  --muted: #e5e7eb;
+  --muted-foreground: #6b7280;
+  --accent: #1e3a8a;
+  --accent-foreground: #fff;
+  --destructive: #ef4444;
+  --border: #cbd5e1;
+  --input: #cbd5e1;
+  --ring: #1e3a8a;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -117,6 +117,34 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  section, .card, .rounded-xl {
+    background: var(--card);
+    color: var(--card-foreground);
+    box-shadow: 0 4px 24px 0 rgba(30,58,138,0.10), 0 1.5px 8px 0 rgba(17,24,39,0.08);
+    border-radius: var(--radius-lg);
+    border: 1.5px solid var(--border);
+    margin-bottom: 2rem;
+    transition: box-shadow 0.2s;
+  }
+  section:hover, .card:hover, .rounded-xl:hover {
+    box-shadow: 0 8px 32px 0 rgba(30,58,138,0.18), 0 3px 16px 0 rgba(17,24,39,0.12);
+  }
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
   }
 }
