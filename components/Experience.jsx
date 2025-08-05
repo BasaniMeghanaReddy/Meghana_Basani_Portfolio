@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+    <div className="p-8">
       <h2 className="text-2xl font-bold text-blue-900 mb-8">
         Work Experience
       </h2>
@@ -20,9 +20,24 @@ export default function Experience() {
                 <span className="text-sm text-gray-600 lg:ml-4">April 2025 – Present</span>
               </div>
               <p className="text-blue-900 font-medium mb-3">AgDA, NDSU | Fargo, USA</p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify">
-                Collaborated with the USDA and AgDA research teams on real-world agricultural analytics platforms such as AgSkysight and PredictPro. These tools support data-driven farming through aerial imagery analysis and predictive modeling. I develop unified RESTful APIs, integrate PostgreSQL backend logic, and perform thorough testing using Postman, all within an MVC framework and Azure DevOps workflow.
-              </p>
+              <ul className="text-gray-700 text-sm leading-relaxed mb-3 space-y-1">
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Collaborated with USDA and AgDA research teams on agricultural analytics platforms (AgSkysight and PredictPro)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Developed unified RESTful APIs and integrated PostgreSQL backend logic within MVC framework</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Performed comprehensive API testing using Postman and maintained Azure DevOps workflow</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Supported data-driven farming through aerial imagery analysis and predictive modeling</span>
+                </li>
+              </ul>
               <div className="flex flex-wrap gap-2 mt-3">
                 <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">REST APIs</span>
                 <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">PostgreSQL</span>
@@ -50,9 +65,24 @@ export default function Experience() {
                 <span className="text-sm text-gray-600 lg:ml-4">Jan 2025 – June 2025</span>
               </div>
               <p className="text-blue-900 font-medium mb-3">CCAST, NDSU | Fargo, USA</p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify">
-                Collaborated on a USDA SCINet initiative to deploy drone imagery tools on HPC clusters. I containerized research applications using Docker and Podman, automated deployment workflows, and tested performance across CCAST and USDA systems, enabling scalable, reproducible scientific analysis.
-              </p>
+              <ul className="text-gray-700 text-sm leading-relaxed mb-3 space-y-1">
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Collaborated on USDA SCINet initiative to deploy drone imagery tools on HPC clusters</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Containerized research applications using Docker and Podman for scalable deployment</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Automated deployment workflows and tested performance across CCAST and USDA systems</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Enabled scalable, reproducible scientific analysis for agricultural research</span>
+                </li>
+              </ul>
               <div className="flex flex-wrap gap-2 mt-3">
                 <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Linux</span>
                 <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">High Performance Computing (HPC)</span>
@@ -78,9 +108,24 @@ export default function Experience() {
                 <span className="text-sm text-gray-600 lg:ml-4">Aug 2023 – Jun 2024</span>
               </div>
               <p className="text-blue-900 font-medium mb-3">GEP Worldwide | Hyderabad, India</p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify">
-                Led the full-stack development of the Delta Migration Tool using the MEAN stack, reducing processing time by 50%. Resolved critical API and UI bugs, implemented unit tests, and built Cypress-based automation to ensure feature stability and complete test coverage. Collaborated on code reviews and user acceptance testing for production-ready deployment.
-              </p>
+              <ul className="text-gray-700 text-sm leading-relaxed mb-3 space-y-1">
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Led full-stack development of Delta Migration Tool using MEAN stack, reducing processing time by 50%</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Resolved critical API and UI bugs, implemented unit tests for improved code quality</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Built Cypress-based automation to ensure feature stability and complete test coverage</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Collaborated on code reviews and user acceptance testing for production-ready deployment</span>
+                </li>
+              </ul>
               <div className="flex flex-wrap gap-2 mt-3">
                 <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">C#</span>
                 <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">.NET</span>
@@ -110,9 +155,24 @@ export default function Experience() {
                 <span className="text-sm text-gray-600 lg:ml-4">May 2023 – Aug 2023</span>
               </div>
               <p className="text-blue-900 font-medium mb-3">DXC Technology | Hyderabad, India</p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify">
-                Managed and deployed over 10 Azure Virtual Machines across multiple regions, ensuring uptime and availability. Set up secure data transfer pipelines between on-premise systems and cloud environments, and worked with network security tools including firewalls, load balancers, and Apache Web Servers.
-              </p>
+              <ul className="text-gray-700 text-sm leading-relaxed mb-3 space-y-1">
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Managed and deployed over 10 Azure Virtual Machines across multiple regions</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Ensured high uptime and availability for cloud infrastructure and services</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Set up secure data transfer pipelines between on-premise systems and cloud environments</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Worked with network security tools including firewalls, load balancers, and Apache Web Servers</span>
+                </li>
+              </ul>
               <div className="flex flex-wrap gap-2 mt-3">
                 <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Microsoft Azure</span>
                 <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Azure VMs</span>

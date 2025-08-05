@@ -1,4 +1,5 @@
 import React from "react";
+import { Download } from "lucide-react";
 
 export default function Publications() {
   const publications = [
@@ -7,6 +8,7 @@ export default function Publications() {
       journal: "The International Journal of Analytical and Experimental Modal Analysis (IJAEMA)",
       date: "June 1, 2023",
       description: "Conducted a systematic review on machine learning (ML) applications for estimating water quality parameters using satellite data.",
+      pdfFile: "Major publication doc.pdf",
       highlights: [
         "Analyzed 1,796 research papers, refining the selection to 113 studies to assess the effectiveness of ML in water quality monitoring",
         "Evaluated various ML models, including ANN, SVM, RF, DT, and GP, for retrieving water quality parameters like chlorophyll-a, salinity, and turbidity",
@@ -20,6 +22,7 @@ export default function Publications() {
       journal: "The International Journal of Analytical and Experimental Modal Analysis (IJAEMA)",
       date: "April 1, 2023",
       description: "Developed an Android-based e-laundry application to enhance accessibility and efficiency in laundry services.",
+      pdfFile: "206-IJAEMA-APRIL-2023.pdf",
       highlights: [
         "Implemented user and admin functionalities, enabling service providers to manage operations and users to track their laundry progress",
         "Integrated key features like laundry shop management, order tracking, request status updates, and notifications",
@@ -31,7 +34,7 @@ export default function Publications() {
   ];
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+    <div className="p-8">
       <h2 className="text-2xl font-bold text-blue-900 mb-8">
         Publications & Research
       </h2>
@@ -39,9 +42,22 @@ export default function Publications() {
         {publications.map((publication, index) => (
           <div key={index} className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
             <div className="mb-4">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {publication.title}
-              </h3>
+              <div className="flex items-start justify-between mb-2">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {publication.title}
+                </h3>
+                {publication.pdfFile && (
+                  <a
+                    href={`/${encodeURIComponent(publication.pdfFile)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-2 px-2 py-1 bg-blue-900 text-white text-xs rounded hover:bg-blue-800 transition-colors flex items-center space-x-1 flex-shrink-0"
+                  >
+                    <Download className="w-3 h-3" />
+                    <span>View PDF</span>
+                  </a>
+                )}
+              </div>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                 <p className="text-blue-900 font-medium text-sm">
                   {publication.journal}

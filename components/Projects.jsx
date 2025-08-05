@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+    <div className="p-8">
       <h2 className="text-2xl font-bold text-blue-900 mb-8">
         Projects
       </h2>

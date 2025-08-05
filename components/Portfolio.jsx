@@ -18,20 +18,100 @@ export default function Portfolio() {
       {/* Navigation */}
       <Navigation />
 
-      {/* Profile Section */}
-      <div className="max-w-7xl mx-auto px-6 py-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center"
-        >
-          <ProfileCard />
-        </motion.div>
-      </div>
+             {/* Profile Section */}
+       <div className="max-w-7xl mx-auto px-6 py-6">
+         <motion.div
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.6 }}
+           className="text-center"
+         >
+           <ProfileCard />
+         </motion.div>
+       </div>
 
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
+       {/* Recent Updates & Contact Section */}
+       <div className="max-w-7xl mx-auto px-6 py-4">
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+           {/* Recent Updates */}
+           <motion.section
+             initial={{ opacity: 0, y: 20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.6, delay: 0.1 }}
+             className="bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+           >
+             <h2 className="text-2xl font-bold text-blue-900 mb-6">
+               Recent Updates
+             </h2>
+             <div className="space-y-4">
+               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
+                 <p className="text-gray-900 text-sm font-medium">Software Developer Intern @NDSU AGDA</p>
+                 <p className="text-gray-600 text-xs">January 2024</p>
+               </div>
+               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
+                 <p className="text-gray-900 text-sm font-medium">Started MS in Computer Science at NDSU</p>
+                 <p className="text-gray-600 text-xs">August 2024</p>
+               </div>
+               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
+                 <p className="text-gray-900 text-sm font-medium">Graduated with B.Tech in Computer Science</p>
+                 <p className="text-gray-600 text-xs">May 2023</p>
+               </div>
+             </div>
+           </motion.section>
+
+           {/* Get In Touch */}
+           <motion.section
+             initial={{ opacity: 0, y: 20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.6, delay: 0.2 }}
+             id="get-in-touch"
+             className="bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+           >
+             <h2 className="text-2xl font-bold text-blue-900 mb-6">
+               Get In Touch
+             </h2>
+             <div className="space-y-4">
+               <a 
+                 href="mailto:meghana.basani@ndsu.edu"
+                 className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
+               >
+                 <Mail className="w-4 h-4" />
+                 <span className="text-sm">meghana.basani@ndsu.edu</span>
+               </a>
+               <a 
+                 href="https://www.linkedin.com/in/basani-meghana/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
+               >
+                 <Linkedin className="w-4 h-4" />
+                 <span className="text-sm">LinkedIn</span>
+               </a>
+               <a 
+                 href="https://github.com/BasaniMeghanaReddy"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
+               >
+                 <Github className="w-4 h-4" />
+                 <span className="text-sm">GitHub</span>
+               </a>
+               <div className="mt-6">
+                 <button
+                   className="w-full flex items-center justify-center space-x-2 bg-blue-900 text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
+                   onClick={() => window.open('/Meghana%20Basani%20Resume.pdf', '_blank')}
+                 >
+                   <Download className="w-4 h-4" />
+                   <span>Download Resume</span>
+                 </button>
+               </div>
+             </div>
+           </motion.section>
+         </div>
+       </div>
+
+       {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-6 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Section 1: Education */}
           <motion.section
@@ -131,8 +211,8 @@ export default function Portfolio() {
           </motion.section>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-12">
-          {/* Section 2: Work Experience */}
+                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-8">
+           {/* Section 2: Work Experience */}
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -155,8 +235,8 @@ export default function Portfolio() {
           </motion.section>
         </div>
 
-        {/* Section 3: Projects */}
-        <div className="mt-12">
+                 {/* Section 3: Projects */}
+         <div className="mt-8">
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -167,8 +247,8 @@ export default function Portfolio() {
           </motion.section>
         </div>
 
-        {/* Section 4: Publications */}
-        <div className="mt-12">
+                 {/* Section 4: Publications */}
+         <div className="mt-8">
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -179,92 +259,7 @@ export default function Portfolio() {
           </motion.section>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-12">
-          {/* Section 5: Updates */}
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-200 p-6"
-          >
-            <h2 className="text-2xl font-bold text-blue-900 mb-6">
-              Recent Updates
-            </h2>
-            <div className="space-y-4">
-              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
-                <p className="text-gray-900 text-sm font-medium">Software Developer Intern @NDSU AGDA</p>
-                <p className="text-gray-600 text-xs">January 2024</p>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
-                <p className="text-gray-900 text-sm font-medium">Started MS in Computer Science at NDSU</p>
-                <p className="text-gray-600 text-xs">August 2024</p>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
-                <p className="text-gray-900 text-sm font-medium">Graduated with B.Tech in Computer Science</p>
-                <p className="text-gray-600 text-xs">May 2023</p>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Section 5: Contact */}
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            id="get-in-touch"
-            className="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-200 p-6"
-          >
-            <h2 className="text-2xl font-bold text-blue-900 mb-6">
-              Get In Touch
-            </h2>
-            <div className="space-y-4">
-              <a 
-                href="mailto:meghana.basani@ndsu.edu"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                <span className="text-sm">meghana.basani@ndsu.edu</span>
-              </a>
-              <a 
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
-              >
-                <Linkedin className="w-4 h-4" />
-                <span className="text-sm">LinkedIn</span>
-              </a>
-              <a 
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
-              >
-                <Github className="w-4 h-4" />
-                <span className="text-sm">GitHub</span>
-              </a>
-              <div className="mt-6 space-y-3">
-                <button
-                  className="w-full flex items-center justify-center space-x-2 bg-blue-900 text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
-                  onClick={() => window.open('/Meghana%20Basani%20Resume.pdf', '_blank')}
-                >
-                  <Download className="w-4 h-4" />
-                  <span>Download Resume</span>
-                </button>
-                <a
-                  href="/Meghana%20Basani%20Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center space-x-2 bg-gray-100 text-gray-700 px-4 py-3 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors border border-gray-300"
-                >
-                  <Download className="w-4 h-4" />
-                  <span>View Resume Online</span>
-                </a>
-
-              </div>
-            </div>
-          </motion.section>
-        </div>
+                          
       </div>
     </div>
   );

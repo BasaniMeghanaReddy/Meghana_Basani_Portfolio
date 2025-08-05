@@ -33,8 +33,8 @@ export default function Navigation() {
 
           {/* Social Links and Contact */}
           <div className="flex items-center space-x-6">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-900 transition-colors">LinkedIn</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-900 transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/basani-meghana/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-900 transition-colors">LinkedIn</a>
+            <a href="https://github.com/BasaniMeghanaReddy" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-900 transition-colors">GitHub</a>
             <a href="#get-in-touch" className="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors">Contact</a>
           </div>
         </div>

@@ -35,7 +35,7 @@ export default function Skills() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+    <div className="p-6">
       <h2 className="text-2xl font-bold text-blue-900 mb-6">
         Technical Skills
       </h2>
