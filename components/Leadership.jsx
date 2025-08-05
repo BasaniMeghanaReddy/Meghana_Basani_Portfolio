@@ -18,14 +18,14 @@ export default function Leadership() {
   ];
 
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold text-blue-900 mb-6">
+    <div className="p-4 sm:p-6">
+      <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">
         Leadership
       </h2>
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         {leadershipRoles.map((role, index) => (
-          <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
-            <h3 className="text-sm font-medium text-gray-900 mb-2">{role.title}</h3>
+          <div key={index} className="bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 hover:shadow-md transition-shadow">
+            <h3 className="text-xs sm:text-sm font-medium text-gray-900 mb-2">{role.title}</h3>
             <p className="text-xs text-gray-700 text-justify">{role.description}</p>
           </div>
         ))}

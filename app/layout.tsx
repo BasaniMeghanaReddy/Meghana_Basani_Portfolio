@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Meghana Basani - Software Developer & Computer Science Student",
   description: "Portfolio of Meghana Basani, a Computer Science graduate student at NDSU with expertise in software development and machine learning.",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
 
 export default function RootLayout({
@@ -24,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -31,9 +35,9 @@ export default function RootLayout({
         <main className="min-h-screen bg-gray-50">
           {children}
         </main>
-        <footer className="bg-white border-t border-gray-200 py-8">
-          <div className="max-w-6xl mx-auto px-6 text-center text-gray-600">
-            <p>&copy; 2024 Meghana Basani. All rights reserved.</p>
+        <footer className="bg-white border-t border-gray-200 py-6 sm:py-8">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center text-gray-600">
+            <p className="text-sm sm:text-base">&copy; 2024 Meghana Basani. All rights reserved.</p>
           </div>
         </footer>
       </body>

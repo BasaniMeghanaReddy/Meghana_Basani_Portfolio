@@ -2,25 +2,25 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <div className="p-8">
-      <h2 className="text-2xl font-bold text-blue-900 mb-8">
+    <div className="p-4 sm:p-8">
+      <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-6 sm:mb-8">
         Work Experience
       </h2>
-      <div className="space-y-6">
-        <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div className="flex items-start space-x-4">
+      <div className="space-y-4 sm:space-y-6">
+        <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
+          <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4">
             <img 
               src="/NDSU AGDA.png" 
               alt="NDSU AGDA Logo" 
-              className="w-12 h-12 flex-shrink-0"
+              className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 mx-auto sm:mx-0"
             />
-            <div className="flex-1">
+            <div className="flex-1 text-center sm:text-left">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-2">
-                <h3 className="text-lg font-semibold text-gray-900">Software Development Intern</h3>
-                <span className="text-sm text-gray-600 lg:ml-4">April 2025 – Present</span>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900">Software Development Intern</h3>
+                <span className="text-xs sm:text-sm text-gray-600 lg:ml-4 mt-1 lg:mt-0">April 2025 – Present</span>
               </div>
-              <p className="text-blue-900 font-medium mb-3">AgDA, NDSU | Fargo, USA</p>
-              <ul className="text-gray-700 text-sm leading-relaxed mb-3 space-y-1">
+              <p className="text-blue-900 font-medium mb-3 text-sm sm:text-base">AgDA, NDSU | Fargo, USA</p>
+              <ul className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-3 space-y-1">
                 <li className="flex items-start">
                   <span className="text-blue-900 mr-2 mt-1">•</span>
                   <span>Collaborated with USDA and AgDA research teams on agricultural analytics platforms (AgSkysight and PredictPro)</span>
@@ -52,20 +52,20 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div className="flex items-start space-x-4">
+        <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
+          <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4">
             <img 
               src="/North_Dakota_State_Bison_logo.svg" 
               alt="NDSU Logo" 
-              className="w-12 h-12 flex-shrink-0"
+              className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 mx-auto sm:mx-0"
             />
-            <div className="flex-1">
+            <div className="flex-1 text-center sm:text-left">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-2">
-                <h3 className="text-lg font-semibold text-gray-900">Software Intern – HPC Systems</h3>
-                <span className="text-sm text-gray-600 lg:ml-4">Jan 2025 – June 2025</span>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900">Software Intern – HPC Systems</h3>
+                <span className="text-xs sm:text-sm text-gray-600 lg:ml-4 mt-1 lg:mt-0">Jan 2025 – June 2025</span>
               </div>
-              <p className="text-blue-900 font-medium mb-3">CCAST, NDSU | Fargo, USA</p>
-              <ul className="text-gray-700 text-sm leading-relaxed mb-3 space-y-1">
+              <p className="text-blue-900 font-medium mb-3 text-sm sm:text-base">CCAST, NDSU | Fargo, USA</p>
+              <ul className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-3 space-y-1">
                 <li className="flex items-start">
                   <span className="text-blue-900 mr-2 mt-1">•</span>
                   <span>Collaborated on USDA SCINet initiative to deploy drone imagery tools on HPC clusters</span>
@@ -95,20 +95,20 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div className="flex items-start space-x-4">
+        <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
+          <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4">
             <img 
               src="/gep logo.jpeg" 
               alt="GEP Logo" 
-              className="w-12 h-12 flex-shrink-0"
+              className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 mx-auto sm:mx-0"
             />
-            <div className="flex-1">
+            <div className="flex-1 text-center sm:text-left">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-2">
-                <h3 className="text-lg font-semibold text-gray-900">Associate Software Engineer</h3>
-                <span className="text-sm text-gray-600 lg:ml-4">Aug 2023 – Jun 2024</span>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900">Associate Software Engineer</h3>
+                <span className="text-xs sm:text-sm text-gray-600 lg:ml-4 mt-1 lg:mt-0">Aug 2023 – Jun 2024</span>
               </div>
-              <p className="text-blue-900 font-medium mb-3">GEP Worldwide | Hyderabad, India</p>
-              <ul className="text-gray-700 text-sm leading-relaxed mb-3 space-y-1">
+              <p className="text-blue-900 font-medium mb-3 text-sm sm:text-base">GEP Worldwide | Hyderabad, India</p>
+              <ul className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-3 space-y-1">
                 <li className="flex items-start">
                   <span className="text-blue-900 mr-2 mt-1">•</span>
                   <span>Led full-stack development of Delta Migration Tool using MEAN stack, reducing processing time by 50%</span>
@@ -142,20 +142,20 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div className="flex items-start space-x-4">
+        <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
+          <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4">
             <img 
               src="/dxc-technology-logo.png" 
               alt="DXC Technology Logo" 
-              className="w-12 h-12 flex-shrink-0"
+              className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 mx-auto sm:mx-0"
             />
-            <div className="flex-1">
+            <div className="flex-1 text-center sm:text-left">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-2">
-                <h3 className="text-lg font-semibold text-gray-900">Software Intern – Cloud & Networking</h3>
-                <span className="text-sm text-gray-600 lg:ml-4">May 2023 – Aug 2023</span>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900">Software Intern – Cloud & Networking</h3>
+                <span className="text-xs sm:text-sm text-gray-600 lg:ml-4 mt-1 lg:mt-0">May 2023 – Aug 2023</span>
               </div>
-              <p className="text-blue-900 font-medium mb-3">DXC Technology | Hyderabad, India</p>
-              <ul className="text-gray-700 text-sm leading-relaxed mb-3 space-y-1">
+              <p className="text-blue-900 font-medium mb-3 text-sm sm:text-base">DXC Technology | Hyderabad, India</p>
+              <ul className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-3 space-y-1">
                 <li className="flex items-start">
                   <span className="text-blue-900 mr-2 mt-1">•</span>
                   <span>Managed and deployed over 10 Azure Virtual Machines across multiple regions</span>

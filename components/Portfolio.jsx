@@ -19,7 +19,7 @@ export default function Portfolio() {
       <Navigation />
 
              {/* Profile Section */}
-       <div className="max-w-7xl mx-auto px-6 py-6">
+       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
          <motion.div
            initial={{ opacity: 0, y: 20 }}
            animate={{ opacity: 1, y: 0 }}
@@ -31,28 +31,28 @@ export default function Portfolio() {
        </div>
 
        {/* Recent Updates & Contact Section */}
-       <div className="max-w-7xl mx-auto px-6 py-4">
-         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
            {/* Recent Updates */}
            <motion.section
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.6, delay: 0.1 }}
-             className="bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+             className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6"
            >
-             <h2 className="text-2xl font-bold text-blue-900 mb-6">
+             <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">
                Recent Updates
              </h2>
-             <div className="space-y-4">
-               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
+             <div className="space-y-3 sm:space-y-4">
+               <div className="bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 hover:shadow-md transition-shadow">
                  <p className="text-gray-900 text-sm font-medium">Software Developer Intern @NDSU AGDA</p>
                  <p className="text-gray-600 text-xs">January 2024</p>
                </div>
-               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
+               <div className="bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 hover:shadow-md transition-shadow">
                  <p className="text-gray-900 text-sm font-medium">Started MS in Computer Science at NDSU</p>
                  <p className="text-gray-600 text-xs">August 2024</p>
                </div>
-               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow">
+               <div className="bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 hover:shadow-md transition-shadow">
                  <p className="text-gray-900 text-sm font-medium">Graduated with B.Tech in Computer Science</p>
                  <p className="text-gray-600 text-xs">May 2023</p>
                </div>
@@ -65,17 +65,17 @@ export default function Portfolio() {
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.6, delay: 0.2 }}
              id="get-in-touch"
-             className="bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+             className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6"
            >
-             <h2 className="text-2xl font-bold text-blue-900 mb-6">
+             <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">
                Get In Touch
              </h2>
-             <div className="space-y-4">
+             <div className="space-y-3 sm:space-y-4">
                <a 
                  href="mailto:meghana.basani@ndsu.edu"
                  className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
                >
-                 <Mail className="w-4 h-4" />
+                 <Mail className="w-4 h-4 flex-shrink-0" />
                  <span className="text-sm">meghana.basani@ndsu.edu</span>
                </a>
                <a 
@@ -84,7 +84,7 @@ export default function Portfolio() {
                  rel="noopener noreferrer"
                  className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
                >
-                 <Linkedin className="w-4 h-4" />
+                 <Linkedin className="w-4 h-4 flex-shrink-0" />
                  <span className="text-sm">LinkedIn</span>
                </a>
                <a 
@@ -93,10 +93,10 @@ export default function Portfolio() {
                  rel="noopener noreferrer"
                  className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
                >
-                 <Github className="w-4 h-4" />
+                 <Github className="w-4 h-4 flex-shrink-0" />
                  <span className="text-sm">GitHub</span>
                </a>
-               <div className="mt-6">
+               <div className="mt-4 sm:mt-6">
                  <button
                    className="w-full flex items-center justify-center space-x-2 bg-blue-900 text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
                    onClick={() => window.open('/Meghana%20Basani%20Resume.pdf', '_blank')}
@@ -111,31 +111,31 @@ export default function Portfolio() {
        </div>
 
        {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8">
           {/* Section 1: Education */}
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             id="education"
-            className="lg:col-span-3 bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+            className="lg:col-span-3 bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6"
           >
-            <h2 className="text-2xl font-bold text-blue-900 mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">
               Education
             </h2>
-            <div className="space-y-6">
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
-                <div className="flex items-start space-x-4">
+            <div className="space-y-4 sm:space-y-6">
+              <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4">
                   <img 
                     src="/North_Dakota_State_Bison_logo.svg" 
                     alt="NDSU Logo" 
-                    className="w-16 h-16 flex-shrink-0"
+                    className="w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 mx-auto sm:mx-0"
                   />
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900">North Dakota State University | Fargo, USA</h3>
-                    <p className="text-gray-700 text-sm">Master's in Computer Science | Aug '24 - May '26</p>
-                    <p className="text-blue-900 text-sm font-medium">GPA: 3.75/4.00</p>
+                  <div className="flex-1 text-center sm:text-left">
+                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base">North Dakota State University | Fargo, USA</h3>
+                    <p className="text-gray-700 text-xs sm:text-sm">Master's in Computer Science | Aug '24 - May '26</p>
+                    <p className="text-blue-900 text-xs sm:text-sm font-medium">GPA: 3.75/4.00</p>
                     <div className="mt-2">
                       <p className="text-gray-600 text-xs font-medium mb-1">Relevant Courses:</p>
                       <p className="text-gray-600 text-xs text-justify">Machine Learning, Software Engineering, Database Systems, Web Development, Data Structures & Algorithms</p>
@@ -143,17 +143,17 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
-                <div className="flex items-start space-x-4">
+              <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4">
                   <img 
                     src="/JNTU_Hyderabad_logo.png" 
                     alt="JNTU Hyderabad Logo" 
-                    className="w-16 h-16 flex-shrink-0"
+                    className="w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 mx-auto sm:mx-0"
                   />
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900">Jawaharlal Nehru Technological University | Hyderabad, INDIA</h3>
-                    <p className="text-gray-700 text-sm">Bachelor's of Technology in Computer Science | Aug '19 - May '23</p>
-                    <p className="text-blue-900 text-sm font-medium">GPA: 8.0/10.00</p>
+                  <div className="flex-1 text-center sm:text-left">
+                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base">Jawaharlal Nehru Technological University | Hyderabad, INDIA</h3>
+                    <p className="text-gray-700 text-xs sm:text-sm">Bachelor's of Technology in Computer Science | Aug '19 - May '23</p>
+                    <p className="text-blue-900 text-xs sm:text-sm font-medium">GPA: 8.0/10.00</p>
                     <div className="mt-2">
                       <p className="text-gray-600 text-xs font-medium mb-1">Relevant Courses:</p>
                       <p className="text-gray-600 text-xs text-justify">Data Structures, Object-Oriented Programming, Computer Networks, Operating Systems, Software Engineering</p>
@@ -161,17 +161,17 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
-                <div className="flex items-start space-x-4">
+              <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4">
                   <img 
                     src="/narayana_junior_college_logo.jpeg" 
                     alt="Narayana Junior College Logo" 
-                    className="w-16 h-16 flex-shrink-0"
+                    className="w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 mx-auto sm:mx-0"
                   />
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900">Narayana Junior College | Hyderabad, INDIA</h3>
-                    <p className="text-gray-700 text-sm">Intermediate (12th Grade) | Jun '17 - Apr '19</p>
-                    <p className="text-blue-900 text-sm font-medium">Grade: 932/1000</p>
+                  <div className="flex-1 text-center sm:text-left">
+                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base">Narayana Junior College | Hyderabad, INDIA</h3>
+                    <p className="text-gray-700 text-xs sm:text-sm">Intermediate (12th Grade) | Jun '17 - Apr '19</p>
+                    <p className="text-blue-900 text-xs sm:text-sm font-medium">Grade: 932/1000</p>
                     <div className="mt-2">
                       <p className="text-gray-600 text-xs font-medium mb-1">Stream:</p>
                       <p className="text-gray-600 text-xs text-justify">Science (Mathematics, Physics, Chemistry)</p>
@@ -179,17 +179,17 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
-                <div className="flex items-start space-x-4">
+              <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4">
                   <img 
                     src="/priyankahighschoollogo.png" 
                     alt="Priyanka High School Logo" 
-                    className="w-16 h-16 flex-shrink-0"
+                    className="w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 mx-auto sm:mx-0"
                   />
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900">Priyanka High School | Hyderabad, INDIA</h3>
-                    <p className="text-gray-700 text-sm">SSC (10th Grade) | 2017</p>
-                    <p className="text-blue-900 text-sm font-medium">Grade: 9.5/10</p>
+                  <div className="flex-1 text-center sm:text-left">
+                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base">Priyanka High School | Hyderabad, INDIA</h3>
+                    <p className="text-gray-700 text-xs sm:text-sm">SSC (10th Grade) | 2017</p>
+                    <p className="text-blue-900 text-xs sm:text-sm font-medium">Grade: 9.5/10</p>
                     <div className="mt-2">
                       <p className="text-gray-600 text-xs font-medium mb-1">Education Level:</p>
                       <p className="text-gray-600 text-xs text-justify">Secondary School Certificate (SSC)</p>
@@ -211,7 +211,7 @@ export default function Portfolio() {
           </motion.section>
         </div>
 
-                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-8">
+                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8 mt-6 lg:mt-8">
            {/* Section 2: Work Experience */}
           <motion.section
             initial={{ opacity: 0, y: 20 }}
@@ -236,7 +236,7 @@ export default function Portfolio() {
         </div>
 
                  {/* Section 3: Projects */}
-         <div className="mt-8">
+         <div className="mt-6 lg:mt-8">
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -248,7 +248,7 @@ export default function Portfolio() {
         </div>
 
                  {/* Section 4: Publications */}
-         <div className="mt-8">
+         <div className="mt-6 lg:mt-8">
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
