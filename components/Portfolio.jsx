@@ -99,7 +99,7 @@ export default function Portfolio() {
                <div className="mt-4 sm:mt-6">
                  <button
                    className="w-full flex items-center justify-center space-x-2 bg-blue-900 text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
-                   onClick={() => window.open('/Meghana%20Basani%20Resume.pdf', '_blank')}
+                   onClick={() => window.open('/MeghanaBasani-Resume.pdf', '_blank')}
                  >
                    <Download className="w-4 h-4" />
                    <span>Download Resume</span>
@@ -259,7 +259,6 @@ export default function Portfolio() {
           </motion.section>
         </div>
 
-                          
       </div>
     </div>
   );
