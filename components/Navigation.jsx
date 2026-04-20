@@ -33,6 +33,7 @@ export default function Navigation() {
             <a href="#about" className="text-gray-600 hover:text-blue-900 transition-colors">About</a>
             <a href="#experience" className="text-gray-600 hover:text-blue-900 transition-colors">Experience</a>
             <a href="#publications" className="text-gray-600 hover:text-blue-900 transition-colors">Publications</a>
+            <a href="#achievements" className="text-gray-600 hover:text-blue-900 transition-colors">Achievements</a>
             <a href="#projects" className="text-gray-600 hover:text-blue-900 transition-colors">Projects</a>
             <a href="#skills" className="text-gray-600 hover:text-blue-900 transition-colors">Skills</a>
             <a href="#education" className="text-gray-600 hover:text-blue-900 transition-colors">Education</a>
@@ -69,6 +70,7 @@ export default function Navigation() {
               <a href="#about" className="text-gray-600 hover:text-blue-900 transition-colors px-2 py-1">About</a>
               <a href="#experience" className="text-gray-600 hover:text-blue-900 transition-colors px-2 py-1">Experience</a>
               <a href="#publications" className="text-gray-600 hover:text-blue-900 transition-colors px-2 py-1">Publications</a>
+              <a href="#achievements" className="text-gray-600 hover:text-blue-900 transition-colors px-2 py-1">Achievements</a>
               <a href="#projects" className="text-gray-600 hover:text-blue-900 transition-colors px-2 py-1">Projects</a>
               <a href="#skills" className="text-gray-600 hover:text-blue-900 transition-colors px-2 py-1">Skills</a>
               <a href="#education" className="text-gray-600 hover:text-blue-900 transition-colors px-2 py-1">Education</a>

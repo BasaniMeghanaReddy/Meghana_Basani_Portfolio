@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download, MapPin, Phone, Send } from "lucide-react";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -11,8 +11,32 @@ import Publications from "./Publications";
 import Certifications from "./Certifications";
 import Leadership from "./Leadership";
 import Navigation from "./Navigation";
+import Achievements from "./Achievements";
 
 export default function Portfolio() {
+  const handleContactSubmit = (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const name = formData.get("name")?.toString().trim() || "";
+    const email = formData.get("email")?.toString().trim() || "";
+    const subject = formData.get("subject")?.toString().trim() || "Portfolio Inquiry";
+    const message = formData.get("message")?.toString().trim() || "";
+
+    const body = [
+      name ? `Name: ${name}` : "",
+      email ? `Email: ${email}` : "",
+      "",
+      message,
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    window.location.href = `mailto:basanimeghana916@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
@@ -28,86 +52,6 @@ export default function Portfolio() {
          >
            <ProfileCard />
          </motion.div>
-       </div>
-
-       {/* Recent Updates & Contact Section */}
-       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
-         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-           {/* Recent Updates */}
-           <motion.section
-             initial={{ opacity: 0, y: 20 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.6, delay: 0.1 }}
-             className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6"
-           >
-             <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">
-               Recent Updates
-             </h2>
-             <div className="space-y-3 sm:space-y-4">
-               <div className="bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 hover:shadow-md transition-shadow">
-                 <p className="text-gray-900 text-sm font-medium">Software Developer Intern @NDSU AGDA</p>
-                 <p className="text-gray-600 text-xs">January 2024</p>
-               </div>
-               <div className="bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 hover:shadow-md transition-shadow">
-                 <p className="text-gray-900 text-sm font-medium">Started MS in Computer Science at NDSU</p>
-                 <p className="text-gray-600 text-xs">August 2024</p>
-               </div>
-               <div className="bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 hover:shadow-md transition-shadow">
-                 <p className="text-gray-900 text-sm font-medium">Graduated with B.Tech in Computer Science</p>
-                 <p className="text-gray-600 text-xs">May 2023</p>
-               </div>
-             </div>
-           </motion.section>
-
-           {/* Get In Touch */}
-           <motion.section
-             initial={{ opacity: 0, y: 20 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.6, delay: 0.2 }}
-             id="get-in-touch"
-             className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6"
-           >
-             <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">
-               Get In Touch
-             </h2>
-             <div className="space-y-3 sm:space-y-4">
-               <a 
-                 href="mailto:meghana.basani@ndsu.edu"
-                 className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
-               >
-                 <Mail className="w-4 h-4 flex-shrink-0" />
-                 <span className="text-sm">meghana.basani@ndsu.edu</span>
-               </a>
-               <a 
-                 href="https://www.linkedin.com/in/basani-meghana/"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
-               >
-                 <Linkedin className="w-4 h-4 flex-shrink-0" />
-                 <span className="text-sm">LinkedIn</span>
-               </a>
-               <a 
-                 href="https://github.com/BasaniMeghanaReddy"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="flex items-center space-x-3 text-gray-700 hover:text-blue-900 transition-colors"
-               >
-                 <Github className="w-4 h-4 flex-shrink-0" />
-                 <span className="text-sm">GitHub</span>
-               </a>
-               <div className="mt-4 sm:mt-6">
-                 <button
-                   className="w-full flex items-center justify-center space-x-2 bg-blue-900 text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
-                   onClick={() => window.open('/MeghanaBasani-Resume.pdf', '_blank')}
-                 >
-                   <Download className="w-4 h-4" />
-                   <span>Download Resume</span>
-                 </button>
-               </div>
-             </div>
-           </motion.section>
-         </div>
        </div>
 
        {/* Main Content */}
@@ -138,7 +82,7 @@ export default function Portfolio() {
                     <p className="text-blue-900 text-xs sm:text-sm font-medium">GPA: 3.75/4.00</p>
                     <div className="mt-2">
                       <p className="text-gray-600 text-xs font-medium mb-1">Relevant Courses:</p>
-                      <p className="text-gray-600 text-xs text-justify">Machine Learning, Software Engineering, Database Systems, Web Development, Data Structures & Algorithms</p>
+                      <p className="text-gray-600 text-xs text-justify">Artificial Intelligence, Computational Intelligence, Software Testing, Machine Learning, Software Engineering, Database Systems, Web Development, Data Structures & Algorithms</p>
                     </div>
                   </div>
                 </div>
@@ -248,7 +192,7 @@ export default function Portfolio() {
         </div>
 
                  {/* Section 4: Publications */}
-         <div className="mt-6 lg:mt-8">
+        <div className="mt-6 lg:mt-8">
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -256,6 +200,137 @@ export default function Portfolio() {
             id="publications"
           >
             <Publications />
+          </motion.section>
+        </div>
+
+        <div className="mt-6 lg:mt-8">
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            id="achievements"
+          >
+            <Achievements />
+          </motion.section>
+        </div>
+
+        <div className="mt-6 lg:mt-8">
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            id="get-in-touch"
+            className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sm:p-8"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-8 sm:mb-10">
+              Get In Touch
+            </h2>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Let&apos;s Connect</h3>
+                <p className="text-gray-700 text-base leading-relaxed mb-8 max-w-xl">
+                  I&apos;m always interested in new opportunities, collaborative projects, and conversations around software engineering, AI, and product development. Feel free to reach out.
+                </p>
+
+                <div className="space-y-5">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-900 flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <p className="text-lg font-semibold text-gray-900">Email</p>
+                      <a href="mailto:basanimeghana916@gmail.com" className="text-gray-700 hover:text-blue-900 transition-colors no-underline">
+                        basanimeghana916@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-900 flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <p className="text-lg font-semibold text-gray-900">Phone</p>
+                      <p className="text-gray-700">+1 (701) 639-3559</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-900 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <p className="text-lg font-semibold text-gray-900">Open to Relocation</p>
+                      <p className="text-gray-700">Available for relocation opportunities across the United States</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-900 flex items-center justify-center flex-shrink-0">
+                      <Linkedin className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <p className="text-lg font-semibold text-gray-900">LinkedIn</p>
+                      <a
+                        href="https://www.linkedin.com/in/basani-meghana/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-blue-900 transition-colors no-underline break-all"
+                      >
+                        linkedin.com/in/basani-meghana
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-4 sm:p-6">
+                <form className="space-y-4" onSubmit={handleContactSubmit}>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  />
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  />
+                  <textarea
+                    name="message"
+                    rows={6}
+                    placeholder="Your Message"
+                    className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300 resize-none"
+                  />
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <button
+                      type="submit"
+                      className="inline-flex items-center justify-center space-x-2 bg-blue-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-blue-800 transition-colors"
+                    >
+                      <Send className="w-4 h-4" />
+                      <span>Send Message</span>
+                    </button>
+                    <button
+                      type="button"
+                      className="inline-flex items-center justify-center space-x-2 bg-gray-100 text-gray-700 px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors border border-gray-300"
+                      onClick={() => window.open('/MeghanaBasani-Resume.pdf', '_blank')}
+                    >
+                      <Download className="w-4 h-4" />
+                      <span>Download Resume</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </motion.section>
         </div>
 

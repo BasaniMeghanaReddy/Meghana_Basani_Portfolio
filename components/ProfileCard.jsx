@@ -14,7 +14,7 @@ export default function ProfileCard() {
         <div className="flex-shrink-0">
           <div className="relative">
             <img
-              src="/Profilephoto.jpg"
+              src="/Profilephoto.jpg?v=20260419-2"
               alt="Meghana Basani"
               className="w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 object-cover rounded-full border-4 border-blue-100 shadow-lg"
             />

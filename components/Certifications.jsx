@@ -44,6 +44,18 @@ export default function Certifications() {
       issuer: "Postman",
       color: "blue",
       pdfFile: "Postman - Postman API Fundamentals Student Expert - 2025-04-08.png"
+    },
+    {
+      name: "Google AI Professional Certificate",
+      issuer: "Google",
+      color: "gray",
+      pdfFile: "CertificateOfGoogle AI .pdf"
+    },
+    {
+      name: "Introduction to DevOps",
+      issuer: "IBM",
+      color: "blue",
+      pdfFile: "CertificateOfIBMDevops.pdf"
     }
   ];
 

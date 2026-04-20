@@ -23,30 +23,36 @@ export default function Experience() {
               <ul className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-3 space-y-1">
                 <li className="flex items-start">
                   <span className="text-blue-900 mr-2 mt-1">•</span>
-                  <span>Collaborated with USDA and AgDA research teams on agricultural analytics platforms (AgSkysight and PredictPro)</span>
+                  <span>Built a scalable Analytical API backend using Node.js and PostgreSQL to support multiple agricultural analytics applications</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-900 mr-2 mt-1">•</span>
-                  <span>Developed unified RESTful APIs and integrated PostgreSQL backend logic within MVC framework</span>
+                  <span>Developed reusable REST APIs and implemented PostgreSQL database logic using triggers, stored procedures, and functions</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-900 mr-2 mt-1">•</span>
-                  <span>Performed comprehensive API testing using Postman and maintained Azure DevOps workflow</span>
+                  <span>Added a role-based permissions system and performed API testing as well as end-to-end testing to improve reliability</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-900 mr-2 mt-1">•</span>
-                  <span>Supported data-driven farming through aerial imagery analysis and predictive modeling</span>
+                  <span>Contributed to AGSkySight feature development by building heatmap visualizations and interactive map layers using React, TypeScript, and Leaflet</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-900 mr-2 mt-1">•</span>
+                  <span>Integrated frontend and backend components for real-time analytics display and worked with FastAPI, Redis, and Celery for data processing workflows</span>
                 </li>
               </ul>
               <div className="flex flex-wrap gap-2 mt-3">
-                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">REST APIs</span>
+                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Node.js</span>
                 <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">PostgreSQL</span>
-                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">SQL</span>
-                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">MVC</span>
-                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Postman</span>
-                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">DBMS</span>
-                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Azure DevOps</span>
-                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">API Testing</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">REST APIs</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">React</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">TypeScript</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Leaflet</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">FastAPI</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Redis</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Celery</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">E2E Testing</span>
               </div>
             </div>
           </div>

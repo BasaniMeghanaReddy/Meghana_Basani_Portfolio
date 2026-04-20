@@ -25,9 +25,9 @@ export default function Projects() {
                 Delivers best-in-class laundry room operations with superior quality and service.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Android</span>
-                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Mobile App</span>
-                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Service Management</span>
+                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Android Studio</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Java</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Google Firebase</span>
               </div>
             </div>
           </div>
@@ -51,9 +51,9 @@ export default function Projects() {
                 with nearby ambulance/hospital numbers to emergency contacts.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Emergency</span>
-                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Accelerometer</span>
-                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">GPS Tracking</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Java</span>
+                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Google Firebase</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Android Studio</span>
               </div>
             </div>
           </div>

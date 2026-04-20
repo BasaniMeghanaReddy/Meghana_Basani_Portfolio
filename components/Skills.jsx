@@ -3,23 +3,28 @@ import React from "react";
 export default function Skills() {
   const skillCategories = [
     {
-      title: "Programming Languages",
-      skills: ["Java", "C++", "C#", "Python", "JavaScript", "HTML", "CSS", "R", "Bash Scripting"],
+      title: "Languages",
+      skills: ["C++", "Java", "Python", "JavaScript", "C#", "SQL", "MATLAB (Basic)", "PHP", "XML", "jQuery"],
       color: "blue"
     },
     {
-      title: "Frameworks & Methodologies",
-      skills: ["Angular", "Node.js", ".NET", "OOPS", "NumPy", "Pandas", "Agile", "SDLC", "Machine Learning", "Data Science & Analytics"],
+      title: "Web Technologies",
+      skills: ["React JS", "Angular", "Spring Boot", "Node.js", "REST APIs", "HTML", "CSS"],
       color: "gray"
     },
     {
-      title: "Databases & Cloud",
-      skills: ["PostgreSQL", "SQL", "MySQL", "MongoDB", "REST APIs", "Swagger API", "Azure", "Azure VM", "Azure DevOps", "Docker", "Git", "GitHub"],
+      title: "Databases",
+      skills: ["PostgreSQL", "MongoDB", "MySQL", "RDBMS", "NoSQL", "Microsoft Access"],
       color: "blue"
     },
     {
-      title: "Tools & Technologies",
-      skills: ["Jira", "Postman", "VS Code", "Putty", "Apache Web Servers", "CUDA", "Cypress"],
+      title: "Tools & Cloud",
+      skills: ["Azure", "Docker", "Kubernetes", "GitHub", "Postman", "Jira", "Azure DevOps", "Jest", "Quest", "Cypress", "Figma", "Atlassian", "Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Outlook"],
+      color: "gray"
+    },
+    {
+      title: "AI & Data",
+      skills: ["AI Fundamentals", "Machine Learning", "Prompt Engineering", "Data Modeling", "GPT", "Claude"],
       color: "gray"
     }
   ];
