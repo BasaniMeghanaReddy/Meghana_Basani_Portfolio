@@ -67,7 +67,17 @@ export default function Projects() {
               className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 mx-auto sm:mx-0"
             />
             <div className="flex-1 text-center sm:text-left">
-              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3">Portfolio Management System</h3>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900">Portfolio Management System</h3>
+                <a
+                  href="https://meghana-basani-portfolio.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-blue-900 text-white px-4 py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-blue-800 transition-colors no-underline w-fit"
+                >
+                  View Live Project
+                </a>
+              </div>
               <div className="mb-3">
                 <p className="text-blue-900 font-medium text-xs sm:text-sm">Personal Project</p>
                 <p className="text-gray-600 text-xs">Dec 2024 - Present</p>
