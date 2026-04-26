@@ -9,6 +9,47 @@ export default function Projects() {
       <div className="space-y-4 sm:space-y-6">
         <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
           <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-6">
+            <img
+              src="/Townhelp.png?v=2"
+              alt="TownHelp Logo"
+              className="w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0 mx-auto sm:mx-0 object-contain"
+            />
+            <div className="flex-1 text-center sm:text-left">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900">TownHelp</h3>
+                <a
+                  href="https://town-help.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-blue-900 text-white px-4 py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-blue-800 transition-colors no-underline w-fit"
+                >
+                  View Live Project
+                </a>
+              </div>
+              <div className="mb-3">
+                <p className="text-blue-900 font-medium text-xs sm:text-sm">Full-Stack Marketplace Application</p>
+                <p className="text-gray-600 text-xs">2026</p>
+              </div>
+              <p className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-4 text-justify">
+                A neighborhood services marketplace that helps customers discover trusted local providers, book services,
+                chat in-app, track booking progress, manage favorites, receive notifications, and leave reviews. Providers
+                can create profiles, define service areas, manage availability, track bookings, and monitor dashboard stats
+                in one responsive platform.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Next.js 16</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">React 19</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">TypeScript</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Supabase</span>
+                <span className="px-2 py-1 bg-blue-100 text-blue-900 text-xs rounded-full">Prisma</span>
+                <span className="px-2 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-shadow">
+          <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-6">
             <img 
               src="/E-Laundry_logo.png" 
               alt="E-Laundry Services Logo" 
